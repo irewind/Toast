@@ -93,6 +93,8 @@ static const NSString * CSToastActivityViewKey  = @"CSToastActivityViewKey";
     toast.alpha = 0.0;
     [self addSubview:toast];
     
+    [self bringSubviewToFront:toast];
+    
     [UIView animateWithDuration:CSToastFadeDuration
                           delay:0.0
                         options:UIViewAnimationOptionCurveEaseOut
